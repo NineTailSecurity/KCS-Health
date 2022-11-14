@@ -23,7 +23,12 @@ public class Main extends Application  {
         VBox vBox = new VBox();
 
         vBox.setSpacing(8);
-        vBox.setPadding(new Insets(10,10,10,10));
+        // v = top
+        // v1 = right spacing
+        // v2 = bottom spacing
+        // v3 = left spacing
+
+        vBox.setPadding(new Insets(100,100,10,100));
         vBox.getChildren().addAll(
                 new Label("Your Username"),
                 new TextField(),
@@ -46,10 +51,12 @@ public class Main extends Application  {
 
     @Override
     public void start(Stage primaryStage) {
-        Scene scene = new Scene(root,400,600);
+        // v = width
+        // v1 = height
+        Scene scene = new Scene(root,400,400);
         primaryStage.setScene(scene);
         primaryStage.show();
-        primaryStage.setTitle("Login Example JavaFX");
+        primaryStage.setTitle("Sign In");
         primaryStage.setAlwaysOnTop(true);
     }
 
