@@ -7,6 +7,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 public class Main extends Application  {
@@ -19,23 +20,35 @@ public class Main extends Application  {
 
     @Override
     public void init() {
-        Button button = new Button("OPEN");
+        // inputs
+        Label username_inp = new Label("Your Username");
+        username_inp.setFont(new Font("Arial", 24));
+        Label password_inp = new Label("Your Password");
+        password_inp.setFont(new Font("Arial", 24));
+
+        // make button
+        Button button = new Button("LOGIN");
+        button.setFont(new Font("Arial", 18));
+        // make vbox
         VBox vBox = new VBox();
 
+        // spacing between children
         vBox.setSpacing(8);
+
         // v = top
         // v1 = right spacing
         // v2 = bottom spacing
         // v3 = left spacing
-
         vBox.setPadding(new Insets(100,100,10,100));
         vBox.getChildren().addAll(
-                new Label("Your Username"),
-                new TextField(),
-                new Label("Your Password"),
-                new PasswordField(),
-                new Button("LOGIN"));
+                // username label and input
+                username_inp, new TextField(),
+                // password label and input
+                password_inp, new PasswordField(),
+                // button sign in
+                button);
         root.getChildren().addAll(vBox);
+
 
         button.setOnAction(actionEvent-> {
             if(stage!=null){
@@ -47,6 +60,7 @@ public class Main extends Application  {
             stage.setScene(new Scene(stackPane, 200,200));
             stage.show();
         });
+
     }
 
     @Override
@@ -57,7 +71,8 @@ public class Main extends Application  {
         primaryStage.setScene(scene);
         primaryStage.show();
         primaryStage.setTitle("Sign In");
-        primaryStage.setAlwaysOnTop(true);
+        // if I want it to run in the background / open in background
+        // primaryStage.setAlwaysOnTop(true);
     }
 
 }
