@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="84e2fa23-1a67-4a08-9ecd-f55e3c6023b3" name="Changes" comment="">
+    <list default="true" id="84e2fa23-1a67-4a08-9ecd-f55e3c6023b3" name="Changes" comment="test branch - Logan">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/KCS-Health.iml" beforeDir="false" afterPath="$PROJECT_DIR$/KCS-Health.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,10 +38,10 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="JavaFX-debug" type="Application" factoryName="Application">
+    <configuration name="Main" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="KCS-Health" />
-      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Java\javafx-sdk-19\lib&quot; --add-modules javafx.controls.javafx.fxml" />
+      <option name="VM_PARAMETERS" value="--module-path &quot;C:\Java\javafx-sdk-19\lib&quot; --add-modules javafx.controls,javafx.fxml" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -53,8 +55,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668397290407</updated>
-      <workItem from="1668397292013" duration="1901000" />
+      <workItem from="1668397292013" duration="2819000" />
     </task>
+    <task id="LOCAL-00001" summary="test branch - Logan">
+      <created>1668399235645</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668399235645</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,5 +80,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test branch - Logan" />
+    <option name="LAST_COMMIT_MESSAGE" value="test branch - Logan" />
   </component>
 </project>
